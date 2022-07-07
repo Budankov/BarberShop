@@ -29,13 +29,15 @@
             <img src="./images/icon/logo.svg" alt="Логотип" width="69" height="55" />
           </a>
           <ul class="nav-list list">
-            <li><a class="link" href="">О нас</a></li>
-            <li><a class="link" href="">Услуги и цены</a></li>
-            <li><a class="link" href="">Мастера</a></li>
-            <li><a class="link" href="">Контакты</a></li>
+            <li><a class="nav-title link" href="">О нас</a></li>
+            <li><a class="nav-title link" href="">Услуги и цены</a></li>
+            <li><a class="nav-title link" href="">Мастера</a></li>
+            <li><a class="nav-title link" href="">Контакты</a></li>
           </ul>
-          <a class="link" href="tel:+380441111111">+38 044 111 11 11</a>
-          <button class="button" type="button">онлайн-запись</button>
+          <div class="contact-list">
+            <a class="link" href="tel:+380441111111">+38 044 111 11 11</a>
+            <button class="button" type="button">онлайн-запись</button>
+          </div>
         </nav>
       </div>
     </header>
@@ -43,60 +45,70 @@
     <main>
       <!-- Герой -->
       <section class="section">
-        <div class="container">
+        <div class="container hero">
           <div class="socials-section section">
             <ul class="social-list list">
-              <li><a class="link" href="">Instagram</a></li>
-              <li><a class="link" href="">Youtube</a></li>
+              <li><a class="social-link link" href="">Instagram</a></li>
+              <li><a class="social-link link" href="">Youtube</a></li>
             </ul>
           </div>
           <div class="hero-description">
-            <p class="secondary-subtitle">A hair salon for men in Kyiv</p>
-            <h1 class="secondary-title chief">BarberShop</h1>
-            <p class="secondary-text">
-              Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
-            </p>
+            <div class="hero-info">
+              <p class="secondary-subtitle">A hair salon for men in Kyiv</p>
+              <h1 class="secondary-title chief">BarberShop</h1>
+              <p class="secondary-text">
+                Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
+              </p>
+            </div>
           </div>
         </div>
       </section>
       <!-- О нас -->
       <section class="section">
-        <div class="container">
-          <ul class="list">
-            <li>
-              <img
-                src="./images/main/about-img1.jpg"
-                alt="Фото стрижки бороды"
-                width="270"
-                height="445"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/main/about-img2.jpg"
-                alt="Фото стрижки бороды"
-                width="270"
-                height="445"
-              />
-            </li>
-          </ul>
-          <p>О НАС</p>
-          <h2>Лучший Барбершоп твоего города</h2>
-          <p>Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
-          <p>
-            Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда
-            ты попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы команда,
-            которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать
-            каждого, кто к нам приходит!
-          </p>
-          <button type="button">онлайн-запись</button>
+        <div class="container about">
+          <div class="about-images">
+            <ul class="about-list list">
+              <li class="about-item">
+                <img
+                  class="about-img"
+                  src="./images/main/about-img1.jpg"
+                  alt="Фото стрижки бороды"
+                  width="270"
+                  height="445"
+                />
+              </li>
+              <li class="about-item">
+                <img
+                  class="about-img"
+                  src="./images/main/about-img2.jpg"
+                  alt="Фото стрижки бороды"
+                  width="270"
+                  height="445"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="about-info">
+            <p class="primary-subtitle">О нас</p>
+            <h2 class="primary-title">Лучший Барбершоп твоего города</h2>
+            <p class="primary-text">
+              Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.
+            </p>
+            <p class="primary-text subtext">
+              Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И
+              когда ты попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы
+              команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы
+              усовершенствовать каждого, кто к нам приходит!
+            </p>
+            <button class="button subbutton" type="button">онлайн-запись</button>
+          </div>
         </div>
       </section>
       <!-- Услуги и цены -->
       <section class="section">
         <div class="container">
-          <p>Проведи время в компании лучших мастеров</p>
-          <h2>Услуги и цены</h2>
+          <p class="secondary-subtitle">Проведи время в компании лучших мастеров</p>
+          <h2 class="secondary-title">Услуги и цены</h2>
           <table>
             <tr>
               <td>Мужская стрижка</td>
@@ -133,7 +145,7 @@
               <td>от 200 грн.</td>
             </tr>
           </table>
-          <button type="button">онлайн-запись</button>
+          <button class="button" type="button">онлайн-запись</button>
         </div>
       </section>
       <!-- Cтарая традиционная школа -->
@@ -157,9 +169,9 @@
               <p>Подарков постоянным клиентам</p>
             </li>
           </ul>
-          <p>Cтарая традиционная школа</p>
-          <h2>Почему приходят именно к нам?</h2>
-          <p>
+          <p class="primary-subtitle">Cтарая традиционная школа</p>
+          <h2 class="primary-title">Почему приходят именно к нам?</h2>
+          <p class="primary-text">
             О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувtствtовать, чем 10 раз
             прочитать.
           </p>

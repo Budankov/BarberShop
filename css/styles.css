@@ -72,14 +72,18 @@ ol {
 
 /* Section */
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 130px;
 }
 
 /* Шапка */
 .main-nav {
   display: flex;
   align-items: center;
+  position: absolute;
+}
+
+.logo {
+  margin-right: 71px;
 }
 
 .nav-list {
@@ -89,6 +93,29 @@ ol {
   line-height: 1.33;
   letter-spacing: 0.1em;
   color: var(--navigation-text-color);
+}
+
+.nav-title {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--navigation-text-color);
+  margin-right: 40px;
+}
+
+.contact-list {
+  margin-left: 270px;
+}
+
+.contact-list .link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--navigation-text-color);
+  margin-right: 40px;
 }
 
 .button {
@@ -103,15 +130,46 @@ ol {
   text-transform: uppercase;
   color: var(--navigation-text-color);
   background-color: transparent;
+  cursor: pointer;
+}
+
+.button.subbutton {
+  color: var(--header-text-color);
+  margin-top: 24px;
 }
 /* Конец шапки */
 
 /* Герой */
+.container.hero {
+  display: flex;
+}
+
+.socials-section {
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+  padding-right: 18px;
+}
+
+.social-list {
+  display: flex;
+  padding-left: 58px;
+  margin-top: 140px;
+}
+
+.social-link {
+  margin-bottom: 20px;
+}
 
 .hero-description {
   width: 1070px;
   height: 680px;
   background-image: url(../images/main/hero.jpg);
+}
+
+.hero-info {
+  margin-left: 100px;
+  margin-top: 272px;
+  max-width: 450px;
 }
 
 .secondary-title.chief {
@@ -141,3 +199,56 @@ ol {
   color: var(--subtitle-text-color);
 }
 /* Конец героя */
+
+/* О нас */
+.container.about {
+  display: flex;
+}
+
+.about-list {
+  display: flex;
+}
+
+.about-info {
+  width: 50%;
+  margin-left: 64px;
+  padding-right: 80px;
+}
+
+.about-item:not(:last-child) {
+  margin-right: 30px;
+  max-width: 270px;
+  max-height: 445px;
+}
+
+.primary-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--header-text-color);
+  margin-bottom: 20px;
+}
+
+.primary-title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--header-text-color);
+  margin-bottom: 20px;
+}
+
+.primary-text:not(:last-child) {
+  color: var(--description-text-color);
+}
+
+.primary-text.subtext {
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  margin-top: 20px;
+}
+/* Конец о нас */
