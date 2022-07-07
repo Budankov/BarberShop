@@ -10,19 +10,20 @@ font-family: 'Raleway', sans-serif;
   --header-text-color: #303030;
   --subtitle-text-color: #9DA4BD;
   --description-text-color: #555555;
-  --primary-font: 'Open Sans', sans-serif;;
+  --secondary-subtitle-text-color: rgba(157, 164, 189, 0.6);;
+  --primary-bcg-color: #FFFFFF;
+  --secondary-bcg-color: #E5E5E5;
+  --primary-font: 'Open Sans', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
  }
 
 body {
-  background-color: var(--primary-white-color);
-  color: var(--primary-text-color);
   font-family: var(--primary-font);
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
  }
 
 img {
@@ -74,3 +75,69 @@ ol {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+/* Шапка */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--navigation-text-color);
+}
+
+.button {
+  width: 160px;
+  height: 40px;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--navigation-text-color);
+  background-color: transparent;
+}
+/* Конец шапки */
+
+/* Герой */
+
+.hero-description {
+  width: 1070px;
+  height: 680px;
+  background-image: url(../images/main/hero.jpg);
+}
+
+.secondary-title.chief {
+  font-size: 72px;
+  line-height: 1.18;
+}
+
+.secondary-title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--navigation-text-color);
+}
+
+.secondary-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--secondary-subtitle-text-color);
+}
+
+.secondary-text {
+  color: var(--subtitle-text-color);
+}
+/* Конец героя */
