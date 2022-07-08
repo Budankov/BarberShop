@@ -13,6 +13,7 @@ font-family: 'Raleway', sans-serif;
   --secondary-subtitle-text-color: rgba(157, 164, 189, 0.6);;
   --primary-bcg-color: #FFFFFF;
   --secondary-bcg-color: #E5E5E5;
+  --teams-bcg-color: #F7F7F7;
   --primary-font: 'Open Sans', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
  }
@@ -80,6 +81,7 @@ ol {
   display: flex;
   align-items: center;
   position: absolute;
+  margin-top: 32px;
 }
 
 .logo {
@@ -184,6 +186,7 @@ ol {
   line-height: 1.17;
   letter-spacing: 0.05em;
   color: var(--navigation-text-color);
+  margin-bottom: 20px;
 }
 
 .secondary-subtitle {
@@ -193,6 +196,7 @@ ol {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--secondary-subtitle-text-color);
+  margin-bottom: 20px;
 }
 
 .secondary-text {
@@ -252,3 +256,158 @@ ol {
   margin-top: 20px;
 }
 /* Конец о нас */
+
+/* Услуги и цены */
+.service {
+  max-width: 1280px;
+  max-height: 718px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, rgba(41, 42, 50, 0.9), rgba(47, 48, 58, 0.9)),
+  url(../images/main/tools.jpg);
+  background-color: var(--secondary-bcg-color);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.service .secondary-title {
+  margin-bottom: 44px;
+}
+
+.service .secondary-subtitle,
+.service .secondary-title {
+  text-align: left;
+}
+
+
+.service-tables {
+  display: flex;
+  margin-bottom: 47px;
+}
+
+.table-left,
+.table-right {
+  display: inline-block;
+  width: 585px;
+  text-align: left;
+  padding: 40px 30px;
+}
+
+.table-left {
+  background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.table-right {
+  background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+/* Конец услуг и цен */
+
+/* Cтарая традиционная школа */
+.feature .container {
+  display: flex;
+}
+
+.feature-item {
+  width: 170px;
+  height: 133px;
+  background: var(--teams-bcg-color);
+}
+/* Конец Cтарая традиционная школа */
+
+/* Наши мастера */
+.teams {
+  margin: 0  auto;
+  width: 1280px;
+  background: var(--teams-bcg-color);
+}
+
+.teams .primary-subtitle {
+  padding-top: 130px;
+}
+
+.team {
+  display: flex;
+}
+
+.team-member {
+  margin: 30px auto;
+}
+
+.team-card:not(:last-child) {
+  margin-right: 30px;
+}
+
+.member-name {
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--header-text-color);
+  margin-bottom: 8px;
+}
+
+.member-position {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.35;
+  text-align: center;
+  color: var(--accent-color);
+}
+
+.company-socials .socials {
+  display: flex;
+}
+
+.network.firm {
+  background-color: var(--primary-bcg-color);
+}
+
+.socials .social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.network {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--primary-text-color);
+}
+
+.icon-network {
+  fill: var(--header-text-color);
+}
+
+.network:hover .icon-network,
+.network:focus .icon-network {
+  fill: var(--accent-color);
+}
+
+.section.teams {
+  padding: 0;
+}
+
+.team .company-socials {
+  margin: 30px 82px 130px 82px;
+}
+/* Конец наших мастеров */
+
+/* На латинском языке “барба” означает “борода” */
+.beard {
+  margin-top: 130px;
+}
+
+.beard-columns {
+  display: flex;
+}
+
+.beard-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.beard-text {
+  margin-left: 135px;
+  margin-bottom: 44px;
+}
+/* Конец На латинском языке “барба” означает “борода” */
