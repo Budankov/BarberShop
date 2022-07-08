@@ -14,6 +14,7 @@ font-family: 'Raleway', sans-serif;
   --primary-bcg-color: #FFFFFF;
   --secondary-bcg-color: #E5E5E5;
   --teams-bcg-color: #F7F7F7;
+  --contacts-bcg-color: #191C26;
   --primary-font: 'Open Sans', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
  }
@@ -106,6 +107,13 @@ ol {
   margin-right: 40px;
 }
 
+.nav-title:focus,
+.nav-title:hover,
+.contact-list .link:focus,
+.contact-list .link:hover {
+  color: var(--accent-color);
+}
+
 .contact-list {
   margin-left: 270px;
 }
@@ -135,6 +143,16 @@ ol {
   cursor: pointer;
 }
 
+.button.dark:focus,
+.button.dark:hover {
+  background-color: var(--accent-color);
+}
+
+.button:focus,
+.button:hover {
+  background-color: var(--accent-color);
+}
+
 .button.subbutton {
   color: var(--header-text-color);
   margin-top: 24px;
@@ -160,6 +178,19 @@ ol {
 
 .social-link {
   margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: var(--header-text-color);
+}
+
+.social-link:focus,
+.social-link:hover {
+  color: var(--accent-color);
+}
+
+.social-text:not(:last-child) {
+  margin-right: 40px;
 }
 
 .hero-description {
@@ -307,10 +338,71 @@ ol {
   display: flex;
 }
 
+.feature-items {
+  position: relative;
+  width: 370px;
+  height: 331px;
+  margin-top: 121px;
+  margin-left: 100px;
+}
+
+.feature-list {
+  display: flex;
+}
+
 .feature-item {
   width: 170px;
   height: 133px;
   background: var(--teams-bcg-color);
+  text-align: center;
+}
+
+.feature-item.item1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.feature-item.item2 {
+  position: absolute;
+  top: 35px;
+  right: 0;
+}
+
+.feature-item.item3 {
+  position: absolute;
+  bottom: 35px;
+  left: 0;
+}
+
+.feature-item.item4 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.feature-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.35;
+  letter-spacing: 0.05em;
+  color: var(--header-text-color);
+  padding: 20px 45px 0px 45px;
+}
+
+.feature-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  color: var(--header-text-color);
+  padding: 6px 24px 20px 24px;
+}
+
+.feature-description {
+  width: 500px;
+  height: 243px;
+  margin-top: 130px;
+  margin-left: 130px;
 }
 /* Конец Cтарая традиционная школа */
 
@@ -411,3 +503,44 @@ ol {
   margin-bottom: 44px;
 }
 /* Конец На латинском языке “барба” означает “борода” */
+
+/* Контакты */
+.contacts {
+  background-color: var(--contacts-bcg-color);
+  background-image: linear-gradient(to right, rgba(41, 42, 50, 0.9), rgba(47, 48, 58, 0.9)), url(../images/main/armchair.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 644px;
+  margin: 0 auto;
+  width: 1280px;
+}
+
+.contacts .container {
+  display: flex;
+}
+
+.work-hours {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary-bcg-color);
+}
+
+.contact-nav .link:hover,
+.contact-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.contact-item .map,
+.contact-item .mail,
+.contact-item .tel {
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon {
+  margin-right: 10px;
+  fill: transparent;
+}
