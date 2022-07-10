@@ -336,6 +336,66 @@ ol {
   text-align: left;
   padding: 40px 30px;
 }
+/* ОЧЕНЬ И ОЧЕНЬ КРИВОЙ КОСТЫЛЬ, НЕ КТО НЕ СМОТРИТЕ СЮДА */
+.table-line {
+  position: relative;
+  width: 292px;
+}
+
+.table-position {
+  width: 292px;
+  text-align: end;
+}
+
+.table-line::before {
+  content: '';
+  display: block;
+  bottom: 7px;
+  position: absolute;
+  height: 1px;
+  background-color: #313440;
+}
+
+.table-line.line1::before {
+  left: 165px;
+  width: 250px;
+}
+
+.table-line.line2::before {
+  left: 159px;
+  width: 255px;
+}
+
+.table-line.line3::before {
+  left: 129px;
+  width: 287px;
+}
+
+.table-line.line4::before {
+  left: 235px;
+  width: 182px;
+}
+
+.table-line.line5::before {
+  left: 178px;
+  width: 247px;
+}
+
+.table-line.line6::before {
+  left: 200px;
+  width: 214px;
+
+}
+.table-line.line7::before {
+  left: 259px;
+  width: 156px;
+}
+
+.table-line.line8::before {
+  left: 238px;
+  width: 176px;
+}
+/* КОНЕЦ ОЧЕНЬ И ОЧЕНЬ КРИВОГО КОСТЫЛЯ, НЕ КТО НЕ СМОТРИТЕ СЮДА */
 
 .table-left {
   background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
